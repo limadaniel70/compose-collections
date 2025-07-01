@@ -30,15 +30,16 @@ docker-compose up -d
 
 ## 📦 Included Stacks (Examples)
 
-| Service      | Description                          |
-| ------------ | ------------------------------------ |
-| `squid`      | High-performance caching proxy       |
-| `nginx`      | Lightweight HTTP reverse proxy       |
-| `portainer`  | Docker management UI                 |
-| `redis`      | In-memory key-value store            |
-| `postgres`   | SQL database                         |
-| `grafana`    | Metrics dashboard and visualizations |
-| `prometheus` | Monitoring and alerting toolkit      |
+| Service             | Description                                             |
+| ------------------- | ------------------------------------------------------- |
+| `portainer`         | Docker container, volume, and network management UI     |
+| `dockge`            | Lightweight visual manager for docker-compose projects  |
+| `squid`             | High-performance HTTP caching proxy                     |
+| `mariadb` / `mysql` | Relational SQL database, MySQL-compatible               |
+| `postgresql`        | Robust and extensible SQL database system               |
+| `zabbix`            | Infrastructure and application monitoring platform      |
+| `gitea`             | Self-hosted Git service with lightweight GitHub-like UI |
+| `nextcloud`         | Private cloud storage and collaboration platform        |
 
 > More services coming soon...
 
