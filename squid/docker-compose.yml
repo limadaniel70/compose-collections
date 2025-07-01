@@ -1,0 +1,13 @@
+services:
+  squid:
+    image: ubuntu/squid:5.2-22.04_beta
+    container_name: squid
+    environment:
+      TZ: ${TIMEZONE}
+    ports:
+      - "3128:3128"
+    volumes:
+      - ${SQUID_LOGS}:/var/log/squid
+      - ${SQUID_DATA}:/var/spool/squid
+      - ${SQUID_CONFIG_FILE}:/etc/squid/squid.conf
+      - ${SQUID_SNIPPET_FILE}:/etc/squid/conf.d/snippet.conf
